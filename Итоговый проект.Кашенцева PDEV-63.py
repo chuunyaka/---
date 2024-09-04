@@ -1,3 +1,5 @@
+print('Добро пожаловать в игру!')
+print('Сделайте, пожалуйста, ход:')
 game = [[None, None, None], [None, None, None], [None, None, None]]
 game_is_on = True
 while game_is_on:
@@ -5,6 +7,7 @@ while game_is_on:
     exec ("game" + move)
     for row in game:
         print(row)
+    print('Сделайте, пожалуйста, ход:')
 
     reference_matrix = [
         game[0],
@@ -22,3 +25,4 @@ while game_is_on:
             print("Игра окончена!")
             game_is_on = False
             break
+
